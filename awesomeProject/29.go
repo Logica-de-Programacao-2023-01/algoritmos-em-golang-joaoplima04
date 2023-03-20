@@ -5,8 +5,8 @@ import (
 )
 
 func main() {
-	var num, sum int
-	var avg float64
+	var num, soma int
+	var media float64
 	count := 0
 	fmt.Println("Digite uma lista de números inteiros os separando com espaço, quando terminar digite 0")
 	for {
@@ -18,10 +18,10 @@ func main() {
 		if num == 0 {
 			break
 		}
-		sum += num
+		soma += num
 		count++
 	}
-	avg = float64(sum) / float64(count)
-	fmt.Println("A média é:", avg)
+	media = float64(soma) / float64(count)
+	fmt.Println("A média é:", media)
 
 }
